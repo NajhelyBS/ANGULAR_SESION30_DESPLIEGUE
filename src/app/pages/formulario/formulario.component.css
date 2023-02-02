@@ -1,0 +1,83 @@
+body {
+    border: solid 1px black;
+    background-image: url(https://images5.alphacoders.com/495/thumb-1920-495521.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
+
+h1 {
+    font-size: 33px;
+    font-weight: 700;
+    color: #63BEE6;
+    text-shadow: 0px 0px 4px #BBD8D1;
+    letter-spacing: 2px;
+
+}
+form {
+    border:  inset 4px #63BEE6;
+    box-shadow: 3px 5px 4px 3px #2F7BB1;
+    padding: 1em;
+    background-color: #0c214044;
+
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    margin:4.7rem auto;
+    max-width: 600px;
+}    
+
+mat-label {
+    font-weight: 800;
+    
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  mat-error {
+    font-size: 15px;
+    background-color: #f371608f;
+    border-radius: 20px;
+    color: #024663;
+    font-weight: 800;
+    -webkit-text-stroke-width: 0.08px;
+    -webkit-text-stroke-color: #117099;
+}
+
+h4 {
+    font-weight: bold;
+    color: #0c2140;
+    text-shadow: 0px 0px 3px white;
+    background-color: #f3e8c06b;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+#inicio{
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #477c82a8;
+    text-shadow: 0px 0px 3px white;
+    color:#F56F63;
+    cursor: pointer;
+    text-decoration: underline #F56F63  0.3px;
+}
+
+button:hover {
+    box-shadow: 2px 3px 4px 2px #2F7BB1;
+
+}
+
+#usuarios {
+    height: 3em;
+}

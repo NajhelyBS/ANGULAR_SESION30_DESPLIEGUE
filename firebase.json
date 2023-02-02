@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/despliegue-30",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
