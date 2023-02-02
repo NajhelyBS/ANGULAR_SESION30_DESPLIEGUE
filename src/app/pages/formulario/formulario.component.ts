@@ -13,7 +13,7 @@ import Swal from 'sweetalert2';
 })
 export class FormularioComponent {
 
-  hide = true;
+  usuarios!:any[] ;
 
   formRegister!: FormGroup;
 
@@ -31,7 +31,7 @@ export class FormularioComponent {
 
     this.formRegister = this.formBuilder.group({
       'name': new FormControl ("", [Validators.required, Validators.minLength(3), Validators.maxLength(25)]),
-      'apellido': new FormControl ("", [Validators.required,Validators.pattern('')]), 
+      'apellido': new FormControl ("", [Validators.required,Validators.pattern(/^\b\w+\b \b\w+\b$/)]), 
       'email': new FormControl ("", [Validators.required, Validators.email]),
       'website': new FormControl ("", [Validators.required, Validators.pattern('^((https?|ftp|smtp):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$')]),
     });
@@ -98,9 +98,12 @@ export class FormularioComponent {
       imageAlt: 'imagen',
     });
 
-    
-    
+    console.log(this.formRegister.value);
+    this.usuarios = this.formRegister.value;
+  
   }
+
+
 
 
 }

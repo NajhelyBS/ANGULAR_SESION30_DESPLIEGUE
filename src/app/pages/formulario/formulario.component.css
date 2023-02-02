@@ -20,7 +20,7 @@ form {
     border:  inset 4px #63BEE6;
     box-shadow: 3px 5px 4px 3px #2F7BB1;
     padding: 1em;
-    background-color: #0c214044;
+    background-color: #0c2140a2;
 
 }
 
@@ -49,10 +49,10 @@ mat-label {
     font-size: 15px;
     background-color: #f371608f;
     border-radius: 20px;
-    color: #024663;
+    color: #bae8fc;
     font-weight: 800;
     -webkit-text-stroke-width: 0.08px;
-    -webkit-text-stroke-color: #117099;
+    -webkit-text-stroke-color: #afe7ff;
 }
 
 h4 {
@@ -80,4 +80,10 @@ button:hover {
 
 #usuarios {
     height: 3em;
+}
+
+pre {
+    font-weight: 800;
+    font-size: 16px;
+    text-shadow: 0px 0px 6px white;
 }
